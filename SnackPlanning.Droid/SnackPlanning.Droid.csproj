@@ -148,6 +148,9 @@
     <AndroidResource Include="Resources\layout\MainView.axml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
     <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\layout\NavigationMenuContent.axml" />
+    <AndroidResource Include="Resources\layout\NavigationMenuHeader.axml" />
+    <AndroidResource Include="Resources\drawable\snackbackground.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
