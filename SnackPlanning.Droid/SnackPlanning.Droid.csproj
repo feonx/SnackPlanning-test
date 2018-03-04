@@ -155,6 +155,7 @@
     <AndroidResource Include="Resources\drawable\ic_menu.png" />
     <AndroidResource Include="Resources\layout\LoginView.axml" />
     <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
