@@ -12,7 +12,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="?android:attr/actionBarSize"
-            android:background="?android:attr/colorPrimary" />
+            android:background="?android:attr/colorPrimary">
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/drawerToggle"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/ic_menu" />
+        </android.support.v7.widget.Toolbar>
     </RelativeLayout>
     <android.support.design.widget.NavigationView
         android:id="@+id/navigationView"

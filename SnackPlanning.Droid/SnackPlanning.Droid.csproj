@@ -151,6 +151,7 @@
     <AndroidResource Include="Resources\layout\NavigationMenuContent.axml" />
     <AndroidResource Include="Resources\layout\NavigationMenuHeader.axml" />
     <AndroidResource Include="Resources\drawable\snackbackground.jpeg" />
+    <AndroidResource Include="Resources\drawable\ic_menu.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
