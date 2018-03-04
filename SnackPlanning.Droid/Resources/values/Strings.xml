@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">SnackPlanning</string>
-    <string name="open_drawer">Open</string>
-    <string name="close_drawer">Close</string>
+    <string name="usernameLabel">Gebruikersnaam:</string>
+    <string name="passwordLabel">Wachtwoord:</string>
 </resources>

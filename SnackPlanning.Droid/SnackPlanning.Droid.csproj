@@ -129,6 +129,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="DebugTrace.cs" />
+    <Compile Include="Views\LoginView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -152,6 +153,8 @@
     <AndroidResource Include="Resources\layout\NavigationMenuHeader.axml" />
     <AndroidResource Include="Resources\drawable\snackbackground.jpeg" />
     <AndroidResource Include="Resources\drawable\ic_menu.png" />
+    <AndroidResource Include="Resources\layout\LoginView.axml" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
