@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,7 +17,8 @@
             android:id="@+id/usernameField"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="@string/usernameLabel" />
+            android:hint="@string/usernameLabel"
+            local:MvxBind="Text Username" />
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
         android:layout_width="wrap_content"
@@ -25,7 +27,8 @@
             android:id="@+id/passwordField"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="@string/passwordLabel" />
+            android:hint="@string/passwordLabel"
+            local:MvxBind="Text Password" />
     </android.support.design.widget.TextInputLayout>
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/loginButton"
@@ -33,12 +36,14 @@
         android:layout_height="48dp"
         android:text="Inloggen"
         android:layout_marginTop="15dp"
-        android:background="@color/colorPrimary" />
+        android:background="@color/colorPrimary"
+        local:MvxBind="Click LoginCommand" />
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/registerButton"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:text="Registeren"
         android:layout_marginTop="5dp"
-        android:background="@color/colorPrimary" />
+        android:background="@color/colorPrimary"
+        local:MvxBind="Click Register" />
 </LinearLayout>
