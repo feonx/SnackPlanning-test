@@ -1,6 +1,8 @@
 ﻿using System;
 using Acr.UserDialogs;
 using MvvmCross.Core.ViewModels;
+using SnackPlanning.Core.Services.SnackAPI;
+using System.Threading.Tasks;
 
 namespace SnackPlanning.Core.ViewModels
 {
@@ -27,13 +29,45 @@ namespace SnackPlanning.Core.ViewModels
 
 
         public IMvxCommand LoginCommand => new MvxCommand(Login);
-        private void Login()
+        private async void Login()
         {
             UserDialogs.Instance.ShowLoading("Bezig met inloggen...");
 
-            ShowViewModel<MainViewModel>();
+            var snackAPIClient = new Client();
 
-            UserDialogs.Instance.HideLoading();
+            var userExists = snackAPIClient.UserExists(Username);
+
+            await userExists.ContinueWith(httpRequest =>
+            {
+                UserDialogs.Instance.HideLoading();
+
+                if(httpRequest.Status == TaskStatus.RanToCompletion)
+                {
+                    if (httpRequest.Result == true)
+                    {
+                        ShowViewModel<MainViewModel>();
+                    }
+                    else
+                    {
+                        UserDialogs.Instance.AlertAsync(AlertConfig.DefaultOkText, "De ingevoerde login gegevens zijn incorrect.");
+                    }
+                }
+                else
+                {
+                    UserDialogs.Instance.AlertAsync(AlertConfig.DefaultOkText, "Er is een technische fout opgetreden.");
+   
+                }
+            });
+
+            userExists.Wait();
+
         }
+
+        public IMvxCommand RegisterCommand => new MvxCommand(ShowRegisterView);
+        private void ShowRegisterView()
+        {
+            ShowViewModel<RegisterViewModel>();
+        }
+
     }
 }
