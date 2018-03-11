@@ -15,7 +15,7 @@ using MvvmCross.Droid.Support.V7.AppCompat;
 namespace SnackPlanning.Droid.Views
 {
     [Activity()]
-    public class LoginView : MvxAppCompatActivity
+    public class LoginView : BaseActivity<Core.ViewModels.LoginViewModel>
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -23,7 +23,7 @@ namespace SnackPlanning.Droid.Views
 
             SetContentView(Resource.Layout.LoginView);
 
-            UserDialogs.Init(this);
+            Initialize();
 
         }
     }

@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{D9AF8493-C8E8-4B2E-BB00-A42BDC06BCE3}|Default">
   <MonoDevelop.Ide.ItemProperties.SnackPlanning.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.FA69R0307363" AndroidDesignerPreferredTheme="SnackPlanningTheme" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SnackPlanning.Droid/Views/LoginView.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="SnackPlanning.Core/ViewModels/LoginViewModel.cs" Line="27" Column="9" />
-      <File FileName="SnackPlanning.Droid/Views/LoginView.cs" Line="10" Column="23" />
-      <File FileName="SnackPlanning.Droid/Views/MainView.cs" Line="20" Column="10" />
+      <File FileName="SnackPlanning.Core/ViewModels/LoginViewModel.cs" Line="38" Column="6" />
+      <File FileName="SnackPlanning.Droid/Views/LoginView.cs" Line="28" Column="10" />
+      <File FileName="SnackPlanning.Droid/Views/BaseActivity.cs" Line="21" Column="1" />
+      <File FileName="SnackPlanning.Droid/Resources/values/Styles.xml" Line="12" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

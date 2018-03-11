@@ -36,7 +36,7 @@
         android:layout_height="48dp"
         android:text="Inloggen"
         android:layout_marginTop="15dp"
-        android:background="@color/colorPrimary"
+        style="@style/PrimaryButton"
         local:MvxBind="Click LoginCommand" />
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/registerButton"
@@ -44,6 +44,6 @@
         android:layout_height="48dp"
         android:text="Registeren"
         android:layout_marginTop="5dp"
-        android:background="@color/colorPrimary"
+        style="@style/PrimaryButton"
         local:MvxBind="Click Register" />
 </LinearLayout>

@@ -11,7 +11,7 @@ using Android.Support.Design.Widget;
 namespace SnackPlanning.Droid.Views
 {
     [Activity()]
-    public class MainView : MvxAppCompatActivity
+    public class MainView : BaseActivity<Core.ViewModels.MainViewModel>
     {
         DrawerLayout _drawerLayout;
         NavigationView _navigationView;
