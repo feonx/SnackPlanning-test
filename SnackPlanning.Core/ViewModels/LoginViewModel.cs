@@ -1,10 +1,12 @@
 ﻿using System;
+using Acr.UserDialogs;
 using MvvmCross.Core.ViewModels;
 
 namespace SnackPlanning.Core.ViewModels
 {
     public class LoginViewModel : MvxViewModel
     {
+        
         public LoginViewModel()
         {
         }
@@ -27,7 +29,11 @@ namespace SnackPlanning.Core.ViewModels
         public IMvxCommand LoginCommand => new MvxCommand(Login);
         private void Login()
         {
+            UserDialogs.Instance.ShowLoading("Bezig met inloggen...");
+
             ShowViewModel<MainViewModel>();
+
+            UserDialogs.Instance.HideLoading();
         }
     }
 }

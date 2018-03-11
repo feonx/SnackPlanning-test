@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{D9AF8493-C8E8-4B2E-BB00-A42BDC06BCE3}|Default">
+  <MonoDevelop.Ide.ItemProperties.SnackPlanning.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.FA69R0307363" AndroidDesignerPreferredTheme="SnackPlanningTheme" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SnackPlanning.Droid/Views/LoginView.cs">
+    <Files>
+      <File FileName="SnackPlanning.Core/ViewModels/LoginViewModel.cs" Line="27" Column="9" />
+      <File FileName="SnackPlanning.Droid/Views/LoginView.cs" Line="10" Column="23" />
+      <File FileName="SnackPlanning.Droid/Views/MainView.cs" Line="20" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

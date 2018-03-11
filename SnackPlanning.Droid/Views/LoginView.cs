@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Acr.UserDialogs;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -22,6 +22,8 @@ namespace SnackPlanning.Droid.Views
             base.OnCreate(bundle);
 
             SetContentView(Resource.Layout.LoginView);
+
+            UserDialogs.Init(this);
 
         }
     }
