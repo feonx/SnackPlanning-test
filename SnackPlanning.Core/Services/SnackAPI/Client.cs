@@ -80,7 +80,9 @@ namespace SnackPlanning.Core.Services.SnackAPI
 
             var httpContent = new StringContent(jsonUserCredentials, Encoding.UTF8, "application/json");
             var httpClient = new HttpClient();
-            var httpResponse = await httpClient.PostAsync(uri, httpContent);
+            var httpResponse = httpClient.PostAsync(uri, httpContent).Result;
+
+
 
             var jsonResponse = await httpResponse.Content.ReadAsStringAsync();
 
